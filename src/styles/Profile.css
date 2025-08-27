@@ -1,0 +1,162 @@
+
+
+/* Page background */
+.profile-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #9e7cf4 0%, #6b5de6 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 16px;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* "zenify" wordmark */
+.brand {
+  width: 100%;
+  max-width: 420px;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+/* White card */
+.profile-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  padding: 28px 20px 24px;
+  text-align: center;
+}
+
+/* Avatar */
+.profile-pic-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: -56px; /* gentle pop-up look if you place the card under a header later */
+  margin-bottom: 6px;
+}
+
+.profile-pic {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+.edit-icon {
+  position: absolute;
+  right: -2px;
+  bottom: 6px;
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* Title */
+.profile-title {
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #1e2430;
+  margin: 10px 0 16px;
+}
+
+/* Info block */
+.info-card {
+  background: #f5f6f8;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: left;
+  font-size: 15px;
+  color: #1f2633;
+  margin-bottom: 18px;
+}
+
+.info-card p {
+  margin: 8px 0;
+  display: flex;
+  gap: 14px;
+}
+
+.label {
+  min-width: 80px;
+  color: #556070;
+  font-weight: 600;
+}
+
+/* Stats row */
+.stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.stat {
+  flex: 1;
+  background: #f5f6f8;
+  border-radius: 16px;
+  padding: 14px 10px;
+  text-align: center;
+}
+
+.stat-icon {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.stat h3 {
+  margin: 4px 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #1e2430;
+}
+
+.stat p {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Settings list */
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f5f6f8;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-size: 16px;
+  color: #1e2430;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.05s ease;
+}
+
+.setting-item:hover { background: #eef0f3; }
+.setting-item:active { transform: translateY(1px); }
+
+.setting-ico { width: 22px; text-align: center; }
+
+/* Responsive */
+@media (max-width: 480px) {
+  .profile-card { padding: 24px 16px 20px; }
+  .stats { flex-direction: column; }
+}
